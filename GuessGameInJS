@@ -1,0 +1,22 @@
+let max = prompt("Enter your maxmimum no :");
+max = parseInt(max);
+let Random = Math.floor(Math.random()*(max+1));
+let guess = prompt("guess the random no ");
+console.log("guess the random no");
+while(true){
+  if(guess=="quit"){
+    console.log("you quit");
+    break;
+  }
+   if(guess == Random){
+  console.log("You are right congo!! random  no was"+Random);
+  break;
+}
+else if(guess<Random){
+  guess = prompt("your guess was too small please try again later ");
+}
+else if(guess>Random){
+  guess = prompt("your guess is large !! try again later ");
+}
+}
+
